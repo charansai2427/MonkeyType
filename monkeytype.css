@@ -1,0 +1,380 @@
+* body {
+    width: fit-content;
+    height: max-content;
+    background-color: rgb(50, 50, 55);
+}
+
+#navbar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+#im {
+    width: 3em;
+    position: relative;
+    top: 1.7em;
+    left: 23em;
+    cursor: pointer;
+    /* background: transparent; */
+}
+
+#title {
+    color: #D1D0C5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 33px;
+    position: relative;
+    left: 12.7em;
+    top: -1.7em;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    position: absolute;
+    top: 3em;
+    left: 39em;
+}
+
+.icon1 {
+    color: #646669;
+    font-size: 16px;
+}
+
+.icon1:hover {
+    color: #D1D0C5;
+    cursor: pointer;
+}
+
+.right {
+
+    row-gap: 2em;
+    position: absolute;
+    right: 23em;
+    top: 3.5em;
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 30px;
+
+}
+
+.progress {
+    height: 5vh;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 25px;
+    position: absolute;
+    top: 7em;
+    left: 37em;
+    color: #646669;
+    font-size: 16px;
+
+
+    background-color: #2C2E31;
+    background-size: contain;
+
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+
+}
+
+.fst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 5px;
+    color: #D4AC17;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.num {
+    color: #D4AC17;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.timeButton {
+    color: #D4AC17;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.fontButton:hover {
+    color: #D1D0C5;
+    cursor: pointer;
+
+}
+
+.quoteButton:hover {
+    color: #D1D0C5;
+    cursor: pointer;
+
+}
+
+.zenButton:hover {
+    color: #D1D0C5;
+    cursor: pointer;
+
+}
+
+.customButton:hover {
+    color: #D1D0C5;
+    cursor: pointer;
+
+}
+
+.screwButton {
+    color: #D4AC17;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.text:hover {
+    color: #D1D0C5;
+    cursor: pointer;
+}
+
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 5em;
+    left: 53em;
+    color: #646669;
+
+}
+
+.tab {
+    width: 2.5em;
+    font-size: 0.8em;
+    background-color: #646669;
+    color: #2C2E31;
+    text-align: center;
+}
+
+.enter {
+    width: 2.5em;
+    font-size: 0.8em;
+    background-color: #646669;
+    color: #2C2E31;
+    text-align: center;
+}
+
+.end2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 3em;
+    left: 50em;
+    color: #646669;
+}
+
+.esc {
+    width: 2.5em;
+    font-size: 0.8em;
+    background-color: #646669;
+    color: #2C2E31;
+    text-align: center;
+}
+
+.ctrl {
+    width: 2.5em;
+    font-size: 0.8em;
+    background-color: #646669;
+    color: #2C2E31;
+    text-align: center;
+}
+
+.shift {
+    width: 2.5em;
+    font-size: 0.8em;
+    background-color: #646669;
+    color: #2C2E31;
+    text-align: center;
+}
+
+.p {
+    width: 2.5em;
+    font-size: 0.8em;
+    background-color: #646669;
+    color: #2C2E31;
+    text-align: center;
+}
+
+.end3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 1em;
+    left: 23em;
+    color: #646669;
+
+}
+
+.contact {
+    color: #646669;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.support {
+    color: #646669;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.github {
+    color: #646669;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.discord {
+    color: #646669;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.twitter {
+    color: #646669;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.terms {
+    color: #646669;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.security {
+    color: #646669;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.privacy {
+    color: #646669;
+
+    &:hover {
+        color: #D1D0C5;
+        cursor: pointer;
+    }
+}
+
+.end3-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 1em;
+    right: 21em;
+    color: #646669;
+}
+
+
+
+.paint .tip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.paint .tip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.paint:hover .tip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.type {
+    width: 100vw;
+    font-size: 1.5em;
+    color: #646669;
+    transform: translateX(15em) translateY(15em);
+}

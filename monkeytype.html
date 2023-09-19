@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Monkeytype | A minimalistic ,customizable typing test monkeytype.com
+  </title>
+  <link rel="stylesheet" href="monkeytype.css" />
+  <link rel="icon" href="https://media.zeemly.com/media/product/monkeytype.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+  <section id="navbar">
+    <div id="left">
+      <div>
+        <img id="im"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBpdaiHpTGIq7FAdwu_E0BCqNcFFQrH2BxqoEeFaRNggmUJiPZ"
+          alt="" />
+        <h3 id="title">monkeytype</h3>
+
+        <div class="icons">
+          <i class="fa-solid fa-keyboard icon1"></i>
+          <i class="fa-solid fa-crown icon1"></i>
+          <i class="fa-solid fa-info icon1"></i>
+          <i class="fa-solid fa-gear icon1"></i>
+        </div>
+      </div>
+      <div class="right">
+        <i class="fa-solid fa-bell icon1"></i>
+        <i class="fa-solid fa-user icon1"></i>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="fst">
+        <p>@ punctuation</p>
+      </div>
+      <div>
+        <p class="num"># numbers</p>
+      </div>
+      <span> | </span>
+      <div class="timeButton" mode="time">
+        <i class="fa-solid fa-clock"></i>
+        time
+      </div>
+      <div class="fontButton" mode="words">
+        <i class="fas fa-fw fa-font"></i>
+        words
+      </div>
+      <div class="quoteButton" mode="quote">
+        <i class="fa-solid fa-quote-left"></i>
+        quote
+      </div>
+      <div class="zenButton" mode="zen">
+        <i class="fas fa-fw fa-mountain"></i>
+        zen
+      </div>
+
+      <div class="customButton active" timeconfig="custom">
+        <i class="fa-solid fa-wrench"></i>
+        custom
+      </div>
+      <span> | </span>
+      <div class="time">
+        <div class="text" timeconfig="15">
+          <span>15</span>
+        </div>
+
+        <div class="text" timeconfig="30">
+          <span>30</span>
+        </div>
+
+        <div class="text" timeconfig="60">
+          <span>60</span>
+        </div>
+
+        <div class="text" timeconfig="120">
+          <span>120</span>
+        </div>
+
+        <div class="screwButton" mode="screw">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="type"></div>
+
+    <div class="end">
+      <div class="tab">
+        <span>tab </span>
+      </div>
+
+      <p class="plus">+</p>
+
+      <div class="enter">
+        <span>enter</span>
+      </div>
+
+      <p class="minus">-</p>
+      <div class="test">
+        <span>restart test</span>
+      </div>
+    </div>
+
+    <div class="end2">
+      <div class="esc">
+        <span>esc </span>
+      </div>
+
+      <p class="or">or</p>
+
+      <div class="ctrl">
+        <span>ctrl</span>
+      </div>
+      <p class="plus">+</p>
+
+      <div class="shift">
+        <span> shift</span>
+      </div>
+      <p class="plus">+</p>
+
+      <div class="p">
+        <span> p</span>
+      </div>
+      <p class="minus">-</p>
+
+      <div class="command">
+        <span> command line</span>
+      </div>
+    </div>
+
+    <div class="end3">
+      <div class="contact" mode="contact">
+        <i class="fa-solid fa-envelope"></i>
+        Contact
+      </div>
+      <div class="support" mode="support">
+        <i class="fa-sharp fa-solid fa-circle-dollar-to-slot"></i>
+        Support
+      </div>
+      <div class="github" mode="github">
+        <i class="fas fa-fw fa-code"></i>
+        Github
+      </div>
+      <div class="discord" mode="discord">
+        <i class="fab fa-fw fa-discord"></i>
+        Discord
+      </div>
+      <div class="twitter" mode="twitter">
+        <i class="fa-brands fa-twitter"></i>
+        Twitter
+      </div>
+      <div class="terms" mode="terms">
+        <i class="fas fa-fw fa-file-contract"></i>
+        Terms
+      </div>
+
+      <div class="security" mode="security">
+        <i class="fa-sharp fa-solid fa-shield-halved"></i>
+        Security
+      </div>
+
+      <div class="privacy" mode="privacy">
+        <i class="fa-solid fa-lock"></i>
+        Privacy
+      </div>
+    </div>
+
+    <div class="end3-right">
+      <div class="paint" mode="paint">
+        <i class="fa-solid fa-palette"></i>
+        <span class="tip">Shift-click to toggle custom theme </span>
+        serika dark
+      </div>
+
+      <div class="branch" mode="branch">
+        <i class="fas fa-fw fa-code-branch"></i>
+        v1.17.12
+      </div>
+    </div>
+  </section>
+</body>
+<script src="monkeytype.js"></script>
+
+</html>
