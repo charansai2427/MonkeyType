@@ -1,4 +1,6 @@
-const type = document.querySelector(".type");
+const type = document.querySelector(".type") 
+const write = document.querySelector(".write");
+
 const str = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatum, totam veritatis eaque quia beatae pariatur harum? Temporibus soluta dolores hic eaque, praesentium, qui labore deserunt molestias ipsa iure option.",
   "Trees. It was something about the trees. The way they swayed with the wind in unison. The way they shaded the area around them. The sounds of their leaves in the wind and the creaks from the branches as they sway, The trees were making a statement that I just couldn't understand.",
@@ -16,21 +18,61 @@ for (var i = 0; i < randomStr.length; i++) {
   type.innerHTML += `<letter class="letters">${randomStr[i]}</letter>`
 }
 
+// function myFunction(){
+//   document.querySelector(".type").style.color="white";
+//   type.addEventListener("keyPress", myFunction);
+
+// }
+
 var Arr = [];
 body.addEventListener("keyup", (event) => {
 
-  const lettersArr = document.querySelectorAll("letters");
-  if (event.key == "Shift" || event.key == "Backspace" || event.key == "Delete" || event.key == "Insert" || event.key == "Ctrl" || event.key == "Alt" || event.key == "CapsLock" || event.key == "Tab") {
-    Arr.pop();
-    lettersArr[Arr.length].innerText = originalTextArr[Arr.length];
+  const letters = document.querySelectorAll("letters");
+  if (event.key == "Shift" || event.key == "Delete" || event.key == "Insert" || event.key == "Control" || event.key == "Alt" || event.key == "AltGraph" || event.key == "CapsLock" || event.key == "Tab" || event.key == "F12") {
     return;
   }
 
-  if (lettersArr[Arr.length].innerText !== event.key) lettersArr[Arr.length].style.color = "red"
-  Arr.push(event.key);
-  lettersArr[Arr.length].innerText = event.key;
+if(event.key =="Backspace") return Backspacefn()
   const regex = /^[a-zA-Z0-9',. ]/gm;
   if (event.key.match(regex)) {
-    console.log(event.key);
+  compare(event.key);
+
   }
 })
+
+function compare(key){
+  let lettersArr= document.querySelectorAll(".letters");
+  Arr.push(key);
+  write.innerHTML += `<span class="keys">${key}</span>`;
+  console.log("Arr",Arr);
+  const index = Arr.length-1;
+
+  let keys = document.querySelectorAll(".keys");
+  (lettersArr[index].innerHTML == key)?  keys[index].style.color = "white":  keys[index].style.color = "red";       
+}
+
+function Backspacefn(){
+  let keys = document.querySelectorAll(".keys");
+if(keys){
+
+  Arr.pop()
+keys[keys.length-1].remove()
+}
+
+}
+
+const countTime =document.querySelector(".countTimer");
+
+function countDown(x){
+  countTime.classList.add('active');
+  countTime.innerHTML= x. innerHTML;
+
+}
+
+function countDown(){
+  let timeLeft = 60, seconds ;
+  let timerId = setInterval(()=>{
+    seconds--
+    time.textContent = `${seconds}`
+    },500)
+}

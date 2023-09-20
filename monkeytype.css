@@ -1,6 +1,6 @@
 * body {
     width: fit-content;
-    height: max-content;
+    height: fit-content;
     background-color: rgb(50, 50, 55);
 }
 
@@ -370,11 +370,29 @@
 .paint:hover .tip {
     visibility: visible;
     opacity: 1;
+
+}
+
+.tip:hover {
+    color: #646669;
+    cursor: pointer;
 }
 
 .type {
-    width: 100vw;
+    width: 50vw;
     font-size: 1.5em;
     color: #646669;
+    position: fixed;
+    left: 10em;
     transform: translateX(15em) translateY(15em);
+}
+
+.write {
+    transform: translateY(10rem) translateX(15rem);
+    font-size: 1.5rem;
+    width: 70%;
+    position: fixed;
+    top: 8.65em;
+    left: 15em;
+    z-index: 1000;
 }
